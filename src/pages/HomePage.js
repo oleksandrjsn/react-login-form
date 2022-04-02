@@ -5,13 +5,13 @@ import { ucFirst } from "../helpers/textUtils";
 
 const HomePage = ({ user }) => {
   const { dispatchUser } = useContext(AuthStateContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const logOut = () => {
     logoutUser(dispatchUser);
     navigate("/login");
-  }
-  
+  };
+
   return (
     <>
       <h1>Hello, {ucFirst(user.name)}</h1>

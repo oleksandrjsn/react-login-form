@@ -15,8 +15,8 @@ const RoutesList = () => {
           index
           path="/"
           element={
-            <ProtectedRoute data={ data }>
-              <HomePage user={ data.user } />
+            <ProtectedRoute data={data}>
+              <HomePage user={data.user} />
             </ProtectedRoute>
           }
         />

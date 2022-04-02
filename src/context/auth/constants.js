@@ -1,3 +1,3 @@
 export const USER_STORAGE = {
-    KEY: 'userData'
-}
+  KEY: "userData",
+};

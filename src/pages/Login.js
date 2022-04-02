@@ -1,4 +1,4 @@
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthStateContext } from "../context/auth/context";
 import { loginUser } from "../context/auth";
@@ -9,7 +9,7 @@ const Login = () => {
 
   const { dispatchUser } = useContext(AuthStateContext);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();

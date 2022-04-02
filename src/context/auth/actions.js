@@ -11,7 +11,7 @@ const fakeRequest = (user) =>
 
 export const loginUser = async (dispatch, payload) => {
   const { data } = await fakeRequest(payload);
-  
+
   dispatch({ type: AUTH_TYPES.LOGIN, payload: data });
   localStorage.setItem(USER_STORAGE.KEY, JSON.stringify(data));
 
@@ -19,6 +19,6 @@ export const loginUser = async (dispatch, payload) => {
 };
 
 export const logoutUser = async (dispatch) => {
-    dispatch({ type: AUTH_TYPES.LOGOUT });
-	localStorage.removeItem(USER_STORAGE.KEY);
+  dispatch({ type: AUTH_TYPES.LOGOUT });
+  localStorage.removeItem(USER_STORAGE.KEY);
 };
